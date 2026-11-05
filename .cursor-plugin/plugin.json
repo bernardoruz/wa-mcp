@@ -1,0 +1,15 @@
+{
+  "name": "wa-mcp",
+  "displayName": "WA MCP",
+  "version": "1.0.0",
+  "description": "Connect your own WhatsApp to your AI: read and search chats, see what's unanswered, and send, schedule or react to messages. Hosted server; link your number by QR or pairing code. Free plan included.",
+  "author": {
+    "name": "WA MCP",
+    "email": "support@wa-mcp.com"
+  },
+  "homepage": "https://wa-mcp.com/?utm_source=cursor&utm_medium=directory",
+  "repository": "https://github.com/bernardoruz/wa-mcp",
+  "license": "MIT",
+  "keywords": ["whatsapp", "messaging", "chat", "mcp", "productivity"],
+  "logo": "assets/logo.png"
+}
