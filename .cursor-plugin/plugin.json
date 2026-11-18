@@ -2,7 +2,7 @@
   "name": "wa-mcp",
   "displayName": "WA MCP",
   "version": "1.0.0",
-  "description": "Connect your own WhatsApp to your AI: read and search chats, see what's unanswered, and send, schedule or react to messages. Hosted server; link your number by QR or pairing code. Free plan included.",
+  "description": "Connect your own WhatsApp to your AI: read and search chats, see what's unanswered, and send replies. Remote-only: connects to a closed-source server run by WA MCP (Bernardo Ruz, Canada) as a linked device, not Meta's official API. Your AI asks before sending. Independent; not affiliated with WhatsApp or Meta.",
   "author": {
     "name": "WA MCP",
     "email": "support@wa-mcp.com"

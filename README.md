@@ -6,7 +6,9 @@ WA MCP is a hosted WhatsApp MCP server: connect your own WhatsApp to your AI. As
 
 WA MCP is a hosted [Model Context Protocol](https://modelcontextprotocol.io) server. There is nothing to install or run: add the URL, sign in, and link your WhatsApp number by QR code or pairing code. Website: [wa-mcp.com](https://wa-mcp.com/?utm_source=github&utm_medium=directory).
 
-This repository holds the plugin manifest and docs only. The server itself is not open source.
+This repository holds the plugin manifest and docs only. The server itself is closed source and runs on our own servers; see [Security and data](#security-and-data) for what it stores and what it can do.
+
+**Operator:** WA MCP is built and run by Bernardo Ruz, Canada. Contact: support@wa-mcp.com.
 
 ## Install
 
@@ -72,13 +74,19 @@ Your AI shows you a draft and asks before sending anything you didn't dictate.
 
 ## Plans
 
-- **Free:** no time limit and no request cap. Reads, summarizes and searches 90 days of history, and sends text replies to people who've written to you; messages you send end with "Sent via wa-mcp.com". Every new number also starts with 1 hour of full Pro.
+- **Free:** no time limit and no request cap. Reads, summarizes and searches 90 days of history, and sends text replies to people who've written to you. Messages you send on the free plan end with a visible "Sent via wa-mcp.com" line; the send tool's description says so, so your AI knows before it sends. Pro removes it. Every new number also starts with 1 hour of full Pro.
 - **Pro** (US$9/month, US$7/month billed quarterly or US$4/month billed annually): no label, plus files, voice-note transcription, polls, scheduling, editing, reactions, deleting, and starting new conversations with send limits. Ask your AI to subscribe; it gives you a Stripe checkout link.
 
-## Privacy and safety
+## Security and data
 
-- WA MCP links as a WhatsApp linked device, like WhatsApp Web. You can unlink it any time from your phone or with `unlink_whatsapp`.
-- Messages go out at a human pace, and new conversations are protected against WhatsApp's anti-spam rules.
+- **How it connects.** WA MCP links to your WhatsApp as a linked device, the same way WhatsApp Web does. It is not Meta's official WhatsApp Business API. WhatsApp may restrict numbers it sees as automated; WA MCP paces sends and limits new conversations, but no tool can promise WhatsApp will never restrict a number.
+- **Closed source.** The plugin is only a pointer to `https://server.wa-mcp.com/mcp`. The server code is not public and can be updated by the operator at any time.
+- **What is stored.** On the server that runs your linked device: message text and details (sender, chat, time, type), contact and group names, and the linked-device session keys. Photos, videos, voice notes and documents are not stored; a file is fetched from WhatsApp only when your AI asks for it.
+- **How long.** Message text is deleted automatically 90 days after it is stored. Deleting your account removes stored messages; you can also delete a single chat.
+- **Who reads it.** Your AI receives message text only when it calls a tool for you. We don't sell messages, use them for ads or train AI models on them. Voice notes go to Google's Gemini only when you ask for a transcript. Traffic is encrypted (TLS); stored text is not encrypted with a key only you hold.
+- **What your AI can do.** Read and search about 90 days of chats, and send to one person or one group at a time (no bulk sending). On Pro it can also send files, schedule, edit, react to and delete messages. The server tells your AI to show you a draft and ask before sending anything you didn't dictate, and deleting a chat or your account needs an explicit confirmation.
+- **Treat messages as untrusted.** Messages from other people are data, not instructions. Don't let your AI act on requests that appear inside a chat without checking with you.
+- **Stop any time.** Unlink with `unlink_whatsapp` or on your phone under **Settings → Linked devices**; `delete_account` removes your account and stored messages.
 - [Privacy policy](https://wa-mcp.com/privacy) · [Terms](https://wa-mcp.com/terms)
 
 ## Support
