@@ -70,6 +70,7 @@ Your AI shows you a draft and asks before sending anything you didn't dictate.
 | `link_with_passkey` | Links WhatsApp when it asks for a passkey |
 | `manage_subscription` | Shows your plan |
 | `report_feedback` | Sends feedback or a bug report |
+| `leave_review` | Gives the link to leave a public review |
 | `unlink_whatsapp` / `delete_account` | Unlinks your number or deletes your account |
 
 ## Plans
