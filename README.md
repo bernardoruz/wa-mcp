@@ -61,6 +61,7 @@ Your AI shows you a draft and asks before sending anything you didn't dictate.
 | `get_writing_style` | Samples of how you write, so drafts sound like you |
 | `send_message` | Sends a text, photo, video, voice note or document |
 | `send_poll` | Sends a poll |
+| `post_status` | Posts a photo or video to your WhatsApp status, now or scheduled |
 | `schedule_message` | Schedules a message, once or repeating |
 | `list_scheduled_messages` / `cancel_scheduled_message` | Manages scheduled messages |
 | `react_to_message` / `edit_message` / `delete_message` | Reacts to, edits or deletes a message |
