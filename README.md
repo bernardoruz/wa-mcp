@@ -2,7 +2,7 @@
 
 <img src="assets/logo.png" alt="WA MCP logo" width="96">
 
-WA MCP is a hosted WhatsApp MCP server: connect your own WhatsApp to your AI. Ask it to catch you up on your chats, find a message, see who's waiting for a reply, or write and send messages for you, all from the conversation.
+WA MCP ([wa-mcp.com](https://wa-mcp.com/?utm_source=github&utm_medium=directory)) is a hosted WhatsApp MCP server, with nothing to install: connect your own WhatsApp to your AI. It isn't one of the open-source wa-mcp or whatsapp-mcp projects on GitHub that you install and run yourself. Ask it to catch you up on your chats, find a message, see who's waiting for a reply, or write and send messages for you, all from the conversation.
 
 WA MCP is a hosted [Model Context Protocol](https://modelcontextprotocol.io) server. There is nothing to install or run: add the URL, sign in, and link your WhatsApp number by QR code or pairing code. Website: [wa-mcp.com](https://wa-mcp.com/?utm_source=github&utm_medium=directory).
 
