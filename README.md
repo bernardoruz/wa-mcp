@@ -72,6 +72,7 @@ Your AI shows you a draft and asks before sending anything you didn't dictate.
 | `get_session_status` / `request_pairing_code` / `get_pairing_qr` / `restart_session` | Links WhatsApp and checks the connection |
 | `link_with_passkey` | Links WhatsApp when it asks for a passkey |
 | `manage_subscription` | Shows your plan |
+| `get_dashboard_link` | Gives a single-use link to your web dashboard (activity, scheduled messages, connected AIs, plan, auto-reply) |
 | `report_feedback` | Sends feedback or a bug report |
 | `leave_review` | Gives the link to leave a public review |
 | `unlink_whatsapp` / `delete_account` | Unlinks your number or deletes your account |
@@ -79,7 +80,7 @@ Your AI shows you a draft and asks before sending anything you didn't dictate.
 ## Plans
 
 - **Free:** no time limit and no request cap. Reads, summarizes and searches 90 days of history, and sends text replies to people who've written to you. Messages you send on the free plan end with a visible "Sent via wa-mcp.com" line; the send tool's description says so, so your AI knows before it sends. Pro removes it. Every new number also starts with 1 hour of full Pro.
-- **Pro** (US$9/month, US$7/month billed quarterly or US$4/month billed annually): no label, plus files, voice-note transcription, polls, scheduling, editing, reactions, deleting, and starting new conversations with send limits. Ask your AI to subscribe; it gives you a Stripe checkout link.
+- **Pro** (US$9/month, US$7/month billed quarterly or US$4/month billed annually): no label, plus files, voice-note transcription, polls, scheduling, editing, reactions, deleting, and starting new conversations with send limits, and auto-reply (your own AI answers when someone writes to you, set up in the web dashboard). Ask your AI to subscribe; it gives you a Stripe checkout link.
 
 ## Security and data
 
