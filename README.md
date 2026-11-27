@@ -72,7 +72,7 @@ Your AI shows you a draft and asks before sending anything you didn't dictate.
 | `get_session_status` / `request_pairing_code` / `get_pairing_qr` / `restart_session` | Links WhatsApp and checks the connection |
 | `link_with_passkey` | Links WhatsApp when it asks for a passkey |
 | `manage_subscription` | Shows your plan |
-| `get_dashboard_link` | Gives a single-use link to your web dashboard (activity, scheduled messages, connected AIs, plan, auto-reply) |
+| `get_dashboard_link` | Gives a single-use link to your web dashboard (activity, scheduled messages, connected AIs, plan, auto-reply, sending limit), optionally opening straight on one of those pages |
 | `auto_reply` | Sets up auto-reply: WA MCP notifies your own AI when someone writes to you. Your AI suggests its webhook address and who gets auto-replies; you confirm and turn it on in your dashboard (paid plan) |
 | `report_feedback` | Sends feedback or a bug report |
 | `leave_review` | Gives the link to leave a public review |
